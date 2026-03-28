@@ -215,8 +215,6 @@
 </div>
 {% endif %}
 
-{% endblock %}
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
 <script>
 const SORT_URL = "{{ url_for('einkauf_sortieren', liste_id=liste.id) }}";
@@ -284,3 +282,5 @@ function sortieren(art) {
 .drag-handle { cursor:grab; color:var(--muted); font-size:1.1rem; user-select:none; }
 .drag-handle:active { cursor:grabbing; }
 </style>
+
+{% endblock %}
