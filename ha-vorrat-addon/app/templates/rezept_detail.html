@@ -23,6 +23,13 @@
           {% if rezept.beschreibung %}
             <p style="color: var(--muted); margin-top: 4px;">{{ rezept.beschreibung }}</p>
           {% endif %}
+          {% if rezept.quell_url %}
+            <a href="{{ rezept.quell_url }}" target="_blank"
+               style="display:inline-flex; align-items:center; gap:6px; font-size:0.82rem;
+                      color:var(--primary); text-decoration:none; margin-top:6px;">
+              🌐 Originalrezept öffnen →
+            </a>
+          {% endif %}
         </div>
       </div>
       <div style="display: flex; gap: 16px; font-size: 0.85rem; color: var(--muted);">
