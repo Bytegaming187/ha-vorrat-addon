@@ -1,0 +1,6 @@
+{
+    "name": "HA_VORRAT",
+    "hide_default_branch": true,
+    "homeassistant": "2026.4.1",
+    "render_readme": true
+}
